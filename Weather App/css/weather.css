@@ -1,0 +1,25 @@
+/* css styles for weather app */
+
+/* applies to the whole body */	
+body{
+	background-image: url(http://picocleaners.com/wp-content/uploads/2015/03/spring.jpeg);
+	background-size: 100%;
+}		
+
+/* applies to the horizontal line formed
+by the <hr /> tag */
+hr{
+	border-color:inherit;
+}
+
+/* two id selectors; apply to named elements in the HTML */
+
+#weather_app{
+	background-color:rgba(204,255,255,100);	
+	border: 4px groove #000033;
+	border-radius: 30px;
+}
+			
+#weather_img{
+	height: 200px;
+}

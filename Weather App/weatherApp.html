@@ -1,0 +1,103 @@
+<!--
+Beginning of Weather App
+
+Also requires files:
+	css/weather.css
+	img/"partlyCloudy.png"
+-->
+
+<html>
+<head>
+	<title>Weather App</title>
+
+	<!-- get bootstrap over the internet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		
+	<!-- css file for this app -->
+	<link rel="stylesheet" href="css/weather.css"></link>
+</head>
+
+<body>
+
+   <!-- Bootstrap always begins with a container -->
+   <div class="container text-center">
+	<!-- the app appears in a single row -->	
+	<div class="row">
+	   <!-- 4 columns wide and moved over 4 columns = centered --> 
+	   <div class="col-sm-4 col-sm-offset-4" id="weather_app">
+			
+		<!-- now the actual contents; nested in that middle chunk -->	
+		<!-- top row fills up all 12 columns of inner grid -->
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Weather App</h1>
+			</div>
+		</div>
+		
+		<div class="row ">
+			<div class="col-sm-12">
+				<img id="weather_img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-HpDWc-LpNJDXAQNaAGrbcvv7353Sp9rzigTHKEuTj86jWng9" />				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p id="location-today">
+				</p>	
+			</div>
+		</div>	
+		
+		<div class="row">
+			<div class="col-sm-12">
+				<p id="weather/temp">
+				</p>	
+			</div>
+		</div>	
+		
+		<!--Indicates forecast's location-->
+		<div class="row">
+			<div class="col-sm-12">
+				<p id="location-forecast">
+				</p>	
+			</div>
+		</div>	
+		
+		<!--For the forecast to insert information when it is pushed-->
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="forecast"></div>
+			</div>
+		</div>
+		
+		<hr/> <!-- the horizontal line -->
+		
+		<div class="row ">
+			<div class="col-sm-12">
+				<label for="zipCode">Enter ZIP code:</label>
+				<input id="zipCode" />
+				<br />
+				<button onclick="process()">Today's Weather</button>
+			</div>
+		</div>
+		
+		<div class="row">
+			<!-- fills up 8 columns, moved over 2 = centered -->
+			<div class="col-sm-8 col-sm-offset-2">
+			   <button onclick="showForecast()">Forecasts</button>		   
+			</div> <!-- column --> 
+		</div> <!-- last row -->
+		
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-8">
+				<a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/purple.png" width="110" height="18"/> </a>
+			</div>
+		</div>
+		
+	   </div> <!-- column of enclosing row -->
+	
+
+	<script src="js/weather.js"></script>
+	</script>
+</body>
+</html>
