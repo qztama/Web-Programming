@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html>
+
+<head>
+	<title>Quantified Recipes</title>
+	<meta charset="UTF-8"> <!-- we'll be working with a lot of                      
+	text data so it's good to request the generous character set -->
+
+	<!-- get bootstrap over the internet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/static.css">
+</head>
+
+<body>
+<!--                                                                            
+<form action="" onsubmit="return ajaxCall()">                                   
+-->
+<div class="container">
+	<div class="row text-center">
+		<h1>
+			<img src="http://www.veryicon.com/icon/png/Food%20%26%20Drinks/Chocolate/mint%20leaf.png" alt="Responsive image" class="img-rounded" height="100"
+			width="100">Food 2 Fork Recipes
+		</h1>
+		<label for="keywords">Enter ingredients to search for recipes:</label>
+		<input type="text" id="keywords" name="keywords" />
+		<button onclick='ajaxCall("keywordsQuery",useAJAXdata)'>Submit</button>
+	</div>
+</div>
+
+<script src="js/quantRecipe.js"></script>
+</body>
+</html>
